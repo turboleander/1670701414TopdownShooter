@@ -4,7 +4,8 @@ using System.IO;
 [System.Serializable]
 public class SaveData
 {
-    public int unlockedLevel = 1;
+    //public int unlockedLevel = 1;
+    public bool[] levelCompleted = new bool[10];
 }
 
 public class SaveManager : MonoBehaviour
@@ -32,12 +33,22 @@ public class SaveManager : MonoBehaviour
         }
     }
 
-    public void UnlockLevel(int levelToUnlock)
+    //public void UnlockLevel(int levelToUnlock)
+    //{
+    //    if (levelToUnlock > currentData.unlockedLevel)
+    //    {
+    //        currentData.unlockedLevel = levelToUnlock;
+    //        SaveProgress();
+    //    }
+    //}
+
+    public void MarkLevelComplete(int levelIndex)
     {
-        if (levelToUnlock > currentData.unlockedLevel)
+        if (levelIndex < currentData.levelCompleted.Length)
         {
-            currentData.unlockedLevel = levelToUnlock;
+            currentData.levelCompleted[levelIndex] = true;
             SaveProgress();
+            Debug.Log("Saved: level " + (levelIndex + 1) + " Complete!");
         }
     }
 
@@ -55,7 +66,7 @@ public class SaveManager : MonoBehaviour
         {
             string json = File.ReadAllText(saveFilePath);
             currentData = JsonUtility.FromJson<SaveData>(json);
-            Debug.Log("Loaded Saved: " + currentData.unlockedLevel);
+            //Debug.Log("Loaded Saved: " + currentData.unlockedLevel);
         }
         else
         {

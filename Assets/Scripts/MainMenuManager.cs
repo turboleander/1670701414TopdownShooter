@@ -10,16 +10,30 @@ public class MainMenuManager : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1f;
+        SaveData data = SaveManager.instance.currentData;
 
-        int unlocked = 1;
-        if (SaveManager.instance != null)
+        levelButton[0].interactable = true;
+
+        levelButton[1].interactable = data.levelCompleted[0];
+
+        levelButton[2].interactable = data.levelCompleted[1];
+
+        levelButton[3].interactable = data.levelCompleted[1];
+
+        if (levelButton.Length >= 5)
         {
-            unlocked = SaveManager.instance.currentData.unlockedLevel;
+            levelButton[4].interactable = data.levelCompleted[2] && data.levelCompleted[3];
         }
+
+        //int unlocked = 1;
+        //if (SaveManager.instance != null)
+        //{
+        //    unlocked = SaveManager.instance.currentData.unlockedLevel;
+        //}
 
         for (int i = 0; i < levelButton.Length; i++)
         {
-            levelButton[i].interactable = (unlocked >= (i + 1));
+            //levelButton[i].interactable = (unlocked >= (i + 1));
 
             int sceneIndexToLoad = i + 1;
 

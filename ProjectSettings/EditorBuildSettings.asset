@@ -14,6 +14,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game 1.unity
     guid: 43721fc52e72d9943b9014985eee83a1
+  - enabled: 1
+    path: Assets/Scenes/Game 2.unity
+    guid: e3f1734c42961fb44a59d56b4101eb49
+  - enabled: 1
+    path: Assets/Scenes/Game 3.unity
+    guid: 035ea0facfbb3bf4b8b16de3d2c11eeb
+  - enabled: 1
+    path: Assets/Scenes/Game 4.unity
+    guid: 4e289ecfb2263ec4b9e4e7a1b13e48eb
   - enabled: 0
     path: Assets/Scenes/Singleton/Singleton01.unity
     guid: 502cf6ecd05833443ab7f8453a06a8e7

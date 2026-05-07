@@ -923,23 +923,16 @@ MonoBehaviour:
   waveConfigurations:
   - enemyPrefabs:
     - {fileID: 7591800460858037780, guid: 26fb4a3794983844781ecb674ca3474a, type: 3}
-    enemyCount: 4
-    spawnInterval: 1
-    waveInterval: 10
-  - enemyPrefabs:
-    - {fileID: 7591800460858037780, guid: 26fb4a3794983844781ecb674ca3474a, type: 3}
-    - {fileID: 1928853565600797406, guid: b363fb019a12f764bb4223e7aeda6e6a, type: 3}
     enemyCount: 5
     spawnInterval: 1
     waveInterval: 10
   - enemyPrefabs:
     - {fileID: 7591800460858037780, guid: 26fb4a3794983844781ecb674ca3474a, type: 3}
-    - {fileID: 1928853565600797406, guid: b363fb019a12f764bb4223e7aeda6e6a, type: 3}
-    - {fileID: 4856339743466158455, guid: ef7037a830d2bff408a015608b81e6e5, type: 3}
-    enemyCount: 6
+    enemyCount: 10
     spawnInterval: 1
-    waveInterval: 10
+    waveInterval: 0
   waveController: {fileID: 1888470326}
+  uiManager: {fileID: 2055537878}
   IslevelCompleted: 0
 --- !u!4 &535644974
 Transform:
@@ -2693,8 +2686,7 @@ MonoBehaviour:
   countdownText: {fileID: 1208777388}
   gameOverScreen: {fileID: 1138590652}
   winScreen: {fileID: 1998756380}
-  waveManager: {fileID: 535644973}
-  nextLevelName: Game 1
+  nextLevelName: Game 2
   mainMenuName: MainMenu
 --- !u!4 &2055537879
 Transform:

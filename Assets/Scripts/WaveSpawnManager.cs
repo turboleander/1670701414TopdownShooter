@@ -30,8 +30,9 @@ public class WaveSpawnManager : MonoBehaviour
                 //save progress
                 if (SaveManager.instance != null)
                 {
-                    int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-                    SaveManager.instance.UnlockLevel(currentSceneIndex + 1);
+                    int currentSceneIndex = SceneManager.GetActiveScene().buildIndex - 1;
+                    //SaveManager.instance.UnlockLevel(currentSceneIndex + 1);
+                    SaveManager.instance.MarkLevelComplete(currentSceneIndex);
                 }
                 //show win screen
                 if (uiManager != null)

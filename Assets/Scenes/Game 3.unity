@@ -923,9 +923,10 @@ MonoBehaviour:
   waveConfigurations:
   - enemyPrefabs:
     - {fileID: 7591800460858037780, guid: 26fb4a3794983844781ecb674ca3474a, type: 3}
-    enemyCount: 3
+    - {fileID: 1928853565600797406, guid: b363fb019a12f764bb4223e7aeda6e6a, type: 3}
+    enemyCount: 1
     spawnInterval: 1
-    waveInterval: 12
+    waveInterval: 10
   waveController: {fileID: 1888470326}
   uiManager: {fileID: 2055537878}
   IslevelCompleted: 0
@@ -2681,7 +2682,7 @@ MonoBehaviour:
   countdownText: {fileID: 1208777388}
   gameOverScreen: {fileID: 1138590652}
   winScreen: {fileID: 1998756380}
-  nextLevelName: Game 1
+  nextLevelName: Game 4
   mainMenuName: MainMenu
 --- !u!4 &2055537879
 Transform:

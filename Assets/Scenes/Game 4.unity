@@ -923,9 +923,19 @@ MonoBehaviour:
   waveConfigurations:
   - enemyPrefabs:
     - {fileID: 7591800460858037780, guid: 26fb4a3794983844781ecb674ca3474a, type: 3}
-    enemyCount: 1
+    enemyCount: 5
     spawnInterval: 1
-    waveInterval: 10
+    waveInterval: 5
+  - enemyPrefabs:
+    - {fileID: 7591800460858037780, guid: 26fb4a3794983844781ecb674ca3474a, type: 3}
+    enemyCount: 6
+    spawnInterval: 1
+    waveInterval: 6
+  - enemyPrefabs:
+    - {fileID: 7591800460858037780, guid: 26fb4a3794983844781ecb674ca3474a, type: 3}
+    enemyCount: 7
+    spawnInterval: 2
+    waveInterval: 1
   waveController: {fileID: 1888470326}
   uiManager: {fileID: 2055537878}
   IslevelCompleted: 0
